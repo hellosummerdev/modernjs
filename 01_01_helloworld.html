@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <p>script 전</p>
+
+    <script>
+        alert("I'm JavaScript!");
+    </script>
+
+    <script src="./helloworld.js"></script>
+
+    <p>script 후</p>
+
+    <!-- 자바스크립트 코드의 양이 많은 경우엔, 파일로 소분하여 저장할 수 있음 -->
+    <!-- 상대경로, 절대경로로 scr 속성을 사용해 html에 삽입 -->
+    <!-- <script src="/path/to/script.js"></script> -->
+
+    <!-- 아래와 같이 url 전체를 속성으로도 사용 가능 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script> -->
+
+    <!-- 
+        HTML 안에 직접 스크립트를 작성하는 방식은 대개 스크립트가 아주 간단할 때만 사용합니다. 
+        스크립트가 길어지면 별개의 분리된 파일로 만들어 저장하는 것이 좋습니다.
+        스크립트를 별도의 파일에 작성하면 브라우저가 스크립트를 다운받아 
+        캐시(cache)에 저장하기 때문에, 성능상의 이점이 있습니다.
+        
+        여러 페이지에서 동일한 스크립트를 사용하는 경우, 
+        브라우저는 페이지가 바뀔 때마다 스크립트를 새로 다운받지 않고 
+        캐시로부터 스크립트를 가져와 사용합니다. 
+        스크립트 파일을 한 번만 다운받으면 되죠.
+        이를 통해 트래픽이 절약되고 웹 페이지의 실제 속도가 빨라집니다.
+        
+        출처 : https://ko.javascript.info/hello-world
+    -->
+
+    <!-- scr 속성과 내부 코드는 동시에 가질 수 없음
+        <script src="file.js">
+        alert(1); // src 속성이 사용되었으므로 이 코드는 무시됨
+        </script>
+    -->
+
+
+
+</body>
+</html>
